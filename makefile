@@ -1,18 +1,14 @@
-make README.md
- touch README.md
+all:  README.md
 
-# Guessinggame Project
+README.md: guessinggame.sh
 
-##Date and Time that make was run: 
-
-'date +""%d-%m-%y" +%T"'
-
-##Number of lines of code in guessinggame.sh
-
-'''
-wc -l guessinggame.sh
-
-'''
+  echo "# Peer-graded Assignment: Bash, Make, Git and GitHub" > README.md
 
 
-######Don't have a clue how to do this - just wanted to put something up.  I'm done.
+  echo "##Date and Time that make was run:"
+
+  date >> README.md
+
+  echo "###Number of lines of code in guessinggame.sh: " >> README.md
+
+  wc -l guessinggame.sh
